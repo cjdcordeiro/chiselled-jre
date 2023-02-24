@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "docker:pinDigests"
+  ],
+  "docker": {
+    "pinDigests": true
+  },
+  "prHourlyLimit": 0,
+  "ignorePaths": [
+    "tests/", 
+    "demos/"
+  ]
+}

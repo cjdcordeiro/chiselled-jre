@@ -12,7 +12,7 @@ WORKDIR /opt/chisel
 RUN go generate internal/deb/version.go \
     && go build ./cmd/chisel
 
-FROM cccordeiro/test:$UBUNTU_RELEASE@sha256:e6987feeb4f79e553bf07738ec908fde797c008941dcadf569b993c607a9cc55 AS builder
+FROM ccordeiro/test:$UBUNTU_RELEASE@sha256:e6987feeb4f79e553bf07738ec908fde797c008941dcadf569b993c607a9cc55 AS builder
 SHELL ["/bin/bash", "-oeux", "pipefail", "-c"]
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates \

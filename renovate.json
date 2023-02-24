@@ -10,6 +10,7 @@
   "prHourlyLimit": 0,
   "ignorePaths": [
     "tests/", 
-    "demos/"
+    "demos/",
+    "benchmarks"
   ]
 }

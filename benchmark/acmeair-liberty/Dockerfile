@@ -1,4 +1,4 @@
-FROM websphere-liberty:23.0.0.1-full-java8-ibmjava
+FROM websphere-liberty:23.0.0.5-full-java8-ibmjava
 
 COPY --chown=1001:0 config/server.xml /opt/ibm/wlp/usr/servers/defaultServer/server.xml
 

@@ -13,7 +13,7 @@ WORKDIR /opt/chisel
 RUN go generate internal/deb/version.go \
     && go build ./cmd/chisel
 
-FROM public.ecr.aws/ubuntu/ubuntu:$UBUNTU_RELEASE@sha256:2c1168b31e636c7ab22598bfaefa6de63d1806a908d0c39bd402277881356fab AS builder
+FROM public.ecr.aws/ubuntu/ubuntu:$UBUNTU_RELEASE@sha256:b2fd7c7dee18f2ce9023550702af6408d322a278800ed07829c6dc94b82960b0 AS builder
 SHELL ["/bin/bash", "-oeux", "pipefail", "-c"]
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates \
